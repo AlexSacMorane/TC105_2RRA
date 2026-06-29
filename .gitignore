@@ -2,3 +2,15 @@
 plot/*
 vtk/*
 report/*
+
+# inputs
+materials/*
+
+# output
+data/*
+
+# tests
+test_clump.py
+
+# exemple
+exemple.mp4
