@@ -692,7 +692,7 @@ def checkUnbalanced_granularFlow():
         return
 
     # check the kinetic energy
-    if kineticEnergy() > 0.0001:
+    if kineticEnergy() > 0.0003:
         return
     
     # prepare the next step
