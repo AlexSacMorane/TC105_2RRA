@@ -685,15 +685,15 @@ def checkUnbalanced_granularFlow():
         return
     
     # small variation in the displacement on x
-    if max(plot.data['m_pos_x'][-n_window:])-min(plot.data['m_pos_x'][-n_window:]) > 0.00002:
+    if max(plot.data['m_pos_x'][-n_window:])-min(plot.data['m_pos_x'][-n_window:]) > 0.00001:
         return
     
     # check ratio of the force
-    if unbalancedForce() > 1e-6:
+    if unbalancedForce() > 1e-7:
         return
 
     # check the kinetic energy
-    if kineticEnergy() > 0.0003:
+    if kineticEnergy() > 0.0001:
         return
     
     # prepare the next step
