@@ -4,6 +4,10 @@ Participation in the 2nd Round Robin Activity organized by the TC105 Japanese do
 # Fast description
 The initial configuration is obtained with sphere particles. Then the clump particles are generated, and a new initial configuration is found. Finally, a trap is opened, and the granular flow of the particles is estimated.
 
+The Discrete Element Model is solved with the software [Yade](https://yade-dem.org/doc/).
+
+A [documentation](https://alexsacmorane.github.io/dem/granular_flow/) is available.
+
 # Output
 [Animation](https://youtu.be/dGOPNRD0yIA) of the granular flow
 
