@@ -688,7 +688,7 @@ def checkUnbalanced_granularFlow():
         return
     
     # check ratio of the force
-    if unbalancedForce() > 1e-7:
+    if unbalancedForce() > 5*1e-7:
         return
 
     # check the kinetic energy
@@ -880,7 +880,7 @@ def stopLoad():
     simulation_report = open(simulation_report_name, 'a')
     simulation_report.write("Simulation time : "+str(hours)+" hours "+str(minutes)+" minutes "+str(seconds)+" seconds\n\n")
     simulation_report.close()
-    print("\nSimulation time : "+str(hours)+" hours "+str(minutes)+" minutes "+str(seconds)+" seconds\n")
+    print("Simulation time : "+str(hours)+" hours "+str(minutes)+" minutes "+str(seconds)+" seconds\n")
 
     # save simulation
     os.mkdir('data/'+O.tags['d.id'])
