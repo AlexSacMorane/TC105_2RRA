@@ -186,9 +186,9 @@ for i_mat_part in range(n_mat_part):
     # fixed value 
     poisson_i = 0.37
     density_i = 1111 # should be corrected considering the overlap of the sphere
-    # random sort (use range of 2*standard deviation to get 95% of the population)
-    frictionAngle_i = radians(random.uniform(35.5-2*3.83, 35.5+2*3.83))
-    shear_i = random.uniform(560-2*158, 560+2*158)*1e6
+    # random sort 
+    frictionAngle_i = radians(random.gauss(35.5, 3.83))
+    shear_i = random.gauss(560, 158)*1e6
     young_i = 2*shear_i*(1+poisson_i)
     # save material
     label_i = 'mat'+str(i_mat_part+1)
