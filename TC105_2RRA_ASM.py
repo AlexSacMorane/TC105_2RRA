@@ -166,10 +166,10 @@ mk_new_dir('vtk')
 mk_new_dir('report')
 
 # define wall material
-O.materials.append(FrictMat(young=80e6,
-                            poisson=0.25,
+O.materials.append(FrictMat(young=1534e6,
+                            poisson=0.37,
                             frictionAngle=radians(27.2),
-                            density=2650))
+                            density=1111))
 
 # create box
 O.bodies.append(aabbWalls([Vector3(-100e-3, -50e-3,  10e-3), 
